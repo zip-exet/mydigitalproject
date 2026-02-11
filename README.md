@@ -2,6 +2,7 @@
 
 > **Infrastructure DevOps auto-hébergée avec supervision, gestion de code, CI/CD et services métiers.**
 
+![alt text](<assets/logo dataflow.png>)
 ---
 
 ## 📌 Objectif
@@ -13,6 +14,7 @@ Mettre en place une infrastructure virtuelle sous **Proxmox**, contenant plusieu
 ## 🗂️ Architecture générale
 
 ### 🖥️ Cluster Proxmox (10.2.5.11)
+
 - 3 serveurs (HP / DELL / ILO)
 - Interface Proxmox : [https://10.2.5.11:8006]
 
@@ -109,16 +111,8 @@ Dans [`/scripts`](scripts) :
 
 ## 📸 Aperçu visuel
 
-Les schémas d’architecture sont disponibles dans [`/assets/screenshots`](assets/screenshots)
+### Le schéma d’architecture :
+
+![Schéma d'architecture MyDigitalProject](./assets/MyDigitalProject.drawio.png)
 
 ---
-
-## 📜 Licence
-
-Projet sous licence MIT
-
----
-
-## 📬 Contact
-
-Pour toute question, tu peux me ping dans les issues ou contribuer avec une PR ! 🚀
