@@ -1,0 +1,17 @@
+image: php:8.2
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  tags:
+    - back
+  script:
+    - echo "🚚 Déploiement du back..."
+    - sudo rm -rf /home/flowadmin/back/*
+    - sudo cp -r . /home/flowadmin/back/
+    - echo "🔃 Redémarrage de Nginx et PHP..."
+    - sudo docker compose -f /home/flowadmin/docker-compose.yml restart nginx
+  only:
+    - main
